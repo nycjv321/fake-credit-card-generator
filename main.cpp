@@ -4,7 +4,6 @@
 
 int main() {
 
-	FakeCreditCardGenerator generator;
-	std::cout << generator.getDiscover();
+	std::cout << FakeCreditCardGenerator::generate_discover();
 	
 }

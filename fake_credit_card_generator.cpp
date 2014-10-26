@@ -8,7 +8,7 @@
 #include "number_utilities.h"
 #include <iostream>
 
-unsigned long long FakeCreditCardGenerator::getDiscover() {
+unsigned long long FakeCreditCardGenerator::generate_discover() {
 	long prefix = CreditCardPrefix::getDiscover();
 	unsigned long long number = 0;
 	int length = to_string(prefix).size();
@@ -31,12 +31,12 @@ unsigned long long FakeCreditCardGenerator::getDiscover() {
 	return std::stoull(to_string(prefix).append(to_string(number)).append(to_string(check_digit)));
 }
 
-unsigned long long FakeCreditCardGenerator::getMasterCard() {
+unsigned long long FakeCreditCardGenerator::generate_mastercard() {
 
 }
-unsigned long long FakeCreditCardGenerator::getVisa() {
+unsigned long long FakeCreditCardGenerator::generate_visa() {
 
 }
-unsigned long long FakeCreditCardGenerator::getAmericanExpress() {
+unsigned long long FakeCreditCardGenerator::generate_american_express() {
 
 }
