@@ -11,10 +11,10 @@ class CreditCardPrefix  {
 private: 
 
 public:
-    static unsigned short int getDiscover();
-    static unsigned short int getMasterCard();
-    static unsigned short int getVisa();
-    static unsigned short int getAmericanExpress();
+    static unsigned short int discover();
+    static unsigned short int mastercard();
+    static unsigned short int visa();
+    static unsigned short int american_express();
 }; 
 
 #endif

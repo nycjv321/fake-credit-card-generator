@@ -12,14 +12,13 @@
 using namespace std;
 
 // Checks and validates account numbers that contain Luhn checksums
-class FakeCreditCardGenerator  // class declaration
-{
-private: 
-public:
-    unsigned static long long generate_discover();
-    unsigned static long long generate_mastercard();
-    unsigned static long long generate_visa();
-    unsigned static long long generate_american_express();
+class FakeCreditCardGenerator {
+	private: 
+	public:
+	    unsigned static long long discover();
+	    unsigned static long long mastercard();
+	    unsigned static long long visa();
+	    unsigned static long long american_express();
 }; 
 
 #endif

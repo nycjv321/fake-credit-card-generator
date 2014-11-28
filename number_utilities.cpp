@@ -35,7 +35,7 @@ int NumberUtilities::length(unsigned long long number) {
       return counter;
 }
 
-unsigned long long NumberUtilities::randomNumeric(int l) {
+unsigned long long NumberUtilities::random_numeric(int l) {
 	static mt19937_64 generator(std::chrono::system_clock::now().time_since_epoch().count());
 	
 	unsigned long long value = generator();
