@@ -1,4 +1,4 @@
-*.o
-Makefile.win
-*.dev
 *.layout
+*.win
+*.dev
+*.o
