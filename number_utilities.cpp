@@ -36,18 +36,22 @@ int NumberUtilities::length(unsigned long long number) {
 }
 
 unsigned long long NumberUtilities::random_numeric(int l) {
+	if (l == 0) {
+		return 0;	
+	}
+	
 	static mt19937_64 generator(std::chrono::system_clock::now().time_since_epoch().count());
 	
 	unsigned long long value = generator();
-	long long number = 1;
+	unsigned long long number = 1;
 	
 	for (int i = 0; i < l - 1; ++i) {
-		number *= 10;
+		number = number * 10;
 	}
 			
-	while (value / 10 > number) { 
+	while (value / 10.0 > number) { 
 		value = value / 10;
 	}
-		
+
 	return value;
 }
