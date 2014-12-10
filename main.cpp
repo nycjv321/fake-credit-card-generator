@@ -31,7 +31,7 @@
    }
    
    if (options[VISA]) {
-     std::cout << FakeCreditCardGenerator::mastercard() << endl;
+     std::cout << FakeCreditCardGenerator::visa() << endl;
      return 0;
    }
    
